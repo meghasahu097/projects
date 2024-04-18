@@ -1,5 +1,7 @@
 package com.example.UserAuthentication.service;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -32,6 +34,5 @@ public class UserService {
 		UserEntity user=userRepository.findByUsername(username);
 		return user;
 	}
-	
-	
+
 }
